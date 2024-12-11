@@ -107,10 +107,10 @@ function Lista() {
         />
       </label>
       <div>
-        <button onClick={() => ordenarAlumnos("nombre")}>
+        <button onClick={() => ordenarAlumnos("nombre")} className="btn btn-primary">
           Ordenar por Nombre
         </button>
-        <button onClick={() => ordenarAlumnos("promedio")}>
+        <button onClick={() => ordenarAlumnos("promedio")} className="btn btn-primary">
           Ordenar por Promedio
         </button>
       </div>
