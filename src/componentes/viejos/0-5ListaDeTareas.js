@@ -7,7 +7,7 @@ export default function Lista() {
     { id: 3, text: "  correr", checked: false },
   ]);
 
-  const handleClick = (id: number) => {
+  const handleClick = (id) => {
     if (lista.some((lista) => lista.id === id)) {
       setLista(
         lista.map((lista) =>

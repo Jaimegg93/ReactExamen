@@ -8,11 +8,7 @@ export default function Board() {
   const guesses = ["     ", "     ", "     ", "     ", "     "];
   const [messageWinner, setMessageWinner] = useState("");
 
-  const handleSquareChange = (parameters: {
-    row: number;
-    column: number;
-    letter: any;
-  }) => {
+  const handleSquareChange = (parameters) => {
     guesses[parameters.row - 1] = replaceAt(
       guesses[parameters.row - 1],
       parameters.column - 1,
@@ -51,31 +47,31 @@ export default function Board() {
             row="1"
             column="1"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
           <Square
             row="1"
             column="2"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
           <Square
             row="1"
             column="3"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
           <Square
             row="1"
             column="4"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
           <Square
             row="1"
             column="5"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
         </div>
         <div id="row" className="Row">
@@ -83,31 +79,31 @@ export default function Board() {
             row="2"
             column="1"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
           <Square
             row="2"
             column="2"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
           <Square
             row="2"
             column="3"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
           <Square
             row="2"
             column="4"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
           <Square
             row="2"
             column="5"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
         </div>
         <div id="row" className="Row">
@@ -115,31 +111,31 @@ export default function Board() {
             row="3"
             column="1"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
           <Square
             row="3"
             column="2"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
           <Square
             row="3"
             column="3"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
           <Square
             row="3"
             column="4"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
           <Square
             row="3"
             column="5"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
         </div>
         <div id="row" className="Row">
@@ -147,31 +143,31 @@ export default function Board() {
             row="4"
             column="1"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
           <Square
             row="4"
             column="2"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
           <Square
             row="4"
             column="3"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
           <Square
             row="4"
             column="4"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
           <Square
             row="4"
             column="5"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
         </div>
         <div id="row" className="Row">
@@ -179,37 +175,34 @@ export default function Board() {
             row="5"
             column="1"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
           <Square
             row="5"
             column="2"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
           <Square
             row="5"
             column="3"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
           <Square
             row="5"
             column="4"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
           <Square
             row="5"
             column="5"
             attempt={currentAttempt}
-            textUpdate={(e: any) => handleSquareChange(e)}
+            textUpdate={(e) => handleSquareChange(e)}
           ></Square>
         </div>
       </div>
     </div>
   );
-}
-function replaceAt(arg0: string, arg1: number, letter: any): string {
-  throw new Error("Function not implemented.");
 }

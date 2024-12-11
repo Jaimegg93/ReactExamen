@@ -19,7 +19,7 @@ function Saludo() {
     }
   }
 
-  function handleChange(e: { target: { value: SetStateAction<string> } }) {
+  function handleChange(e) {
     setNombre(e.target.value);
   }
 

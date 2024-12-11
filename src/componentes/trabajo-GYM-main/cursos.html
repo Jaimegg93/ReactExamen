@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gimnasio</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="cursos.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        main {
+            background-image: url('/public/fondo.png');
+            background-size: cover;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .dropdown-menu {
+            background-color: #212529;
+            /* Cambia el color aquí */
+        }
+
+        .dropdown-item {
+            color: #fff;
+            /* Color de las letras */
+        }
+
+        .dropdown-item:hover {
+            background-color: #333;
+            color: #FFA500;
+        }
+
+        card {
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card:hover .card-img-top {
+            opacity: 1;
+        }
+
+        .card:hover h5 {
+            color: #FFA500;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+            /* Color blanco para las letras */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #FFA500;
+            /* Color naranja para el hover */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img class="mx-3 my-2" src="./public/logo-Photoroom.png" href="index.html" alt="Gym Logo"
+                    style="width:80px;" class="rounded-pill">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mx-3 my-2" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="reserva.html">Máquinas</a></li>
+                            <li><a class="dropdown-item" href="cursos.html">Curso</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-3 my-2">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item mx-3 my-2">
+                        <a href="accesoClientes.html">
+                            <button type="button" class="btn btn-warning">Acceso Cliente</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div style="padding-top: 25px;" class="container ">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card">
+                        <img src="/public/spining.jpg" class="card-img-top" alt="Actividad 1"
+                            style="width: 100%; height: 200px;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Spinning</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card">
+                        <img src="/public/zumba.webp" class="card-img-top" alt="Actividad 2"
+                            style="width: 100%; height: 200px;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Zumba</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card">
+                        <img src="/public//body pum.jpg" class="card-img-top" alt="Actividad 3"
+                            style="width: 100%; height: 200px;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Body Pump</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card">
+                        <img src="/public/crosfit.jpg" class="card-img-top" alt="Actividad 4"
+                            style="width: 100%; height: 200px;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">CrossFit</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card">
+                        <img src="/public/acuagym.jpg" class="card-img-top" alt="Actividad 5"
+                            style="width: 100%; height: 200px;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Acua Gym</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card">
+                        <img src="/public/yoga.jpg" class="card-img-top" alt="Actividad 6"
+                            style="width: 100%; height: 200px;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Yoga</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card">
+                        <img src="/public/pilates.jpg" class="card-img-top" alt="Actividad 7"
+                            style="width: 100%; height: 200px;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Pilates</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card">
+                        <img src="/public/Kickboxing-227613.jpg" class="card-img-top" alt="Actividad 8"
+                            style="width: 100%; height: 200px;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Kickboxing</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light text-center p-3">
+        <div class="social-icons" style="padding-bottom: 15px; align-content: center;">
+            <a href="https://www.instagram.com/" target="_blank" class="text-light me-3">
+                <img src="public/R (1).png" alt="Logo instagram" style="max-width:26px; max-height:26px;">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" class="text-light me-3">
+                <img src="public/facebook.png" alt="Logo facebook" style="max-width:30px; max-height:30px;">
+            </a>
+            <a href="https://www.twitter.com/" target="_blank" class="text-light me-3">
+                <img src="public/Twitter-X-Logo.png" alt="Logo twitter" style="max-width:30px; max-height:30px;">
+            </a>
+        </div>
+        <p>Calle Uria 23, Oviedo</p>
+        <p><a href="mailto:flojosfit@gmail.com" class="text-light">flojosfit@gmail.com</a></p>
+        <p>
+            <a href="#" class="text-light">Avisos Legales</a> |
+            <a href="#" class="text-light">Política de privacidad</a>
+        </p>
+        <p>&copy; 2024. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

@@ -3,9 +3,7 @@ import { useState } from "react";
 export default function CheckBox() {
   const [check, setCheck] = useState(false);
 
-  function handleClick(e: {
-    target: { checked: boolean | ((prevState: boolean) => boolean) };
-  }) {
+  function handleClick(e) {
     //funciona sin poner todo eso
     setCheck(e.target.checked);
   }

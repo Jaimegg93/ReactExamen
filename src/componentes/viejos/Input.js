@@ -3,7 +3,7 @@ import { SetStateAction, useState } from "react";
 export default function Input() {
   const [escrito, setEscrito] = useState("Eseee");
 
-  function handleChange(e: { target: { value: SetStateAction<string> } }) {
+  function handleChange(e) {
     //funciona sin poner todo eso
     setEscrito(e.target.value);
   }

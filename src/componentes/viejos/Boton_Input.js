@@ -8,7 +8,7 @@ export default function BotonInput() {
     setCont(cont + 1);
   }
 
-  function handleChange(e: { target: { value: SetStateAction<string> } }) {
+  function handleChange(e) {
     //funciona sin poner todo eso
     setNombre(e.target.value);
   }

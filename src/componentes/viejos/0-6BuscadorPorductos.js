@@ -15,7 +15,7 @@ export default function Buscador() {
     return lista.nombre.toLowerCase().includes(busqueda.toLowerCase());
   });
 
-  function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
+  function handleChange(e) {
     setBusqueda(e.target.value);
   }
 

@@ -5,6 +5,7 @@ import "./alumnos.css";
 function Lista() {
   const [alumnos] = useState(data.alumnos);
   const [alumnoSeleccionado, setAlumnoSeleccionado] = useState();
+  const [media, setMedia] = useState(0);
 
   function handleClick(alumno) {
     if (alumno == alumnoSeleccionado) {
@@ -12,7 +13,17 @@ function Lista() {
     } else {
       setAlumnoSeleccionado(alumno);
     }
+    hacerMedia(alumno);
   }
+
+  function hacerMedia(alumno) {
+    let suma = 0;
+    suma += alumno.asignaturas["Acceso a datos"].promedio;
+    suma += alumno.asignaturas["Programación"].promedio;
+    suma += alumno.asignaturas["Desarrollo de Interfaces"].promedio;
+    setMedia(suma / 3);
+  }
+
   return (
     <div className="card">
       <div className="card-body">
@@ -28,6 +39,7 @@ function Lista() {
               {alumnoSeleccionado && alumnoSeleccionado == alumno && (
                 <div>
                   <h3>Asignaturas</h3>
+                  <p>Media general: {media.toFixed(2)}</p>
                   <p>
                     Acceso a datos Primera_evaluacion:{" "}
                     {alumno.asignaturas["Acceso a datos"].primera_evaluacion}{" "}

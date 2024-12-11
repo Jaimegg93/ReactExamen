@@ -1,5 +1,6 @@
 /*Componente Toggle de visibilidad: Crea un componente que muestre y oculte un elemento al hacer clic en un botón.*/
 
+import React from "react";
 import { useState } from "react";
 
 export default function Toggle() {
